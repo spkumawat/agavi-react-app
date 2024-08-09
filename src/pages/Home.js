@@ -15,6 +15,10 @@ import team3 from '../assets/images/team/3.jpg';
 import team4 from '../assets/images/team/4.jpg';
 import Achievements from '../Components/Counts/Achievements';
 import Event from '../Components/Events/Event.js'
+import ScrollReveal from './ScrollReveal'; 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Home = () => {
 
@@ -41,12 +45,15 @@ const Home = () => {
 
   return (
       <main  className="charity-01-main">
-               <section className="banner">
+      <ScrollReveal>
+
+      
+      <section className="banner">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div className="wrapper">
-              <div className="content">
+              <div className="content" data-aos="zoom-in">
                 <h1>Together We Serve, Together We Grow</h1>
                 <p>"Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it's the only thing that ever has." </p>
                 <div className="btn-002">
@@ -62,21 +69,27 @@ const Home = () => {
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div className="img-wrapper">
               <div className="banner-img">
-                <img src={bannerImg} alt="Banner" />
+               
+                   <img src={bannerImg} alt="Banner" data-aos="zoom-in"/>
+                
+              
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    </ScrollReveal>
+    <ScrollReveal>
 
-
-    <section className="bg-02-b">
+   
+    <section className="bg-02-b"  data-aos="fade-right"  data-aos-offset="200"
+    data-aos-delay="200">
       <div className="container">
         <div className="row">
           <div className="col-12">
             <div className="head-001">
-              <h2>About Us Charity</h2>
+              <h2>ABOUT US </h2>
               <p>With an intent to work towards societal betterment and to help the students maintain their socially traditional roots, Social Wing RAIT was founded in the year 2013. We are dedicated to providing a grass-roots outlook of societal issues to our student members and finding and working on solutions to these issues. Ever since its inception, Social Wing has become a significant part of RAIT and has observed increasing participation of students with each passing year.</p>
             </div>
           </div>
@@ -102,11 +115,30 @@ const Home = () => {
         </div>
       </div>
     </section>
-    <Achievements/>
-    <Event/>
+    </ScrollReveal>
 
-    
-    <section className="bg-05">
+    <ScrollReveal>
+      <div data-aos="fade-left"  data-aos-offset="200"
+    data-aos-delay="150">
+             <Achievements/>
+      </div>
+     
+    </ScrollReveal>
+  
+    <ScrollReveal>
+      <div data-aos="fade-right"  data-aos-offset="200"
+    data-aos-delay="200">
+               <Event/>
+      </div>
+      
+    </ScrollReveal>
+   
+
+    <ScrollReveal>
+
+  
+    <section className="bg-05"  data-aos="zoom-in-up"  data-aos-offset="200"
+    data-aos-delay="200">
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -193,7 +225,7 @@ const Home = () => {
         </div>
       </div>
     </section>
-
+    </ScrollReveal>
 
 {/* <section className="services-01">
 <div className="container">
@@ -317,8 +349,11 @@ const Home = () => {
 </div>
 </section> */}
 
+<ScrollReveal>
 
-<section className="bg-03">
+
+<section className="bg-03" data-aos="flip-up"  data-aos-offset="200"
+    data-aos-delay="200">
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -371,7 +406,7 @@ const Home = () => {
         </div>
       </div>
     </section>
-
+    </ScrollReveal>
 
 
          

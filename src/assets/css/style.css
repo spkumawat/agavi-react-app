@@ -175,7 +175,7 @@ header .nav-items {
 
 /* ================================ Slider CSS =============================== */
 .charity-01-main .banner {
-  padding: 3.125rem 0rem;
+  padding: 8.125rem 0rem;
   position: relative;
   overflow: hidden; }
   .charity-01-main .banner::before {
@@ -283,7 +283,9 @@ header .nav-items {
     .charity-01-main .bg-02-b ._do_er_xs ._kl_de_s {
       position: relative; }
       .charity-01-main .bg-02-b ._do_er_xs ._kl_de_s img {
-        animation: shapeani3 5s linear infinite; }
+        animation: shapeani3 5s linear infinite;
+        border-radius: 20px;
+        height: 25rem;}
     .charity-01-main .bg-02-b ._do_er_xs p {
       margin: 0 0 20px 0;
       font-size: 15px;
@@ -799,7 +801,7 @@ footer {
         footer ._kl_ds_we .head-footer ul li i {
           padding-right: 10px;
           color: #fff;
-          position: absolute;
+          /* position: absolute; */
           left: 0;
           margin: 5px 0 0; }
       footer ._kl_ds_we .head-footer p {

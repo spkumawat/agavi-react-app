@@ -8,13 +8,13 @@
         @include button-color;
         height:100%;
 
-        @media screen and(max-width:767.98px){
+        @media screen and (max-width:767.98px){
             display:none;
         }
     }
 
     .float-se{
-        @media screen and(max-width:767.98px){
+        @media screen and (max-width:767.98px){
             order:2;
             
         }
@@ -25,7 +25,7 @@
         display:block;
         margin:1.25rem 0;
 
-        @media screen and(max-width:767.98px){
+        @media screen and (max-width:767.98px){
             margin:.625rem 0;
         }
 
@@ -43,7 +43,7 @@
                     transition:all ease .5s;
                     counter-increment:step-counter;
 
-                    @media screen and(max-width:767.98px){
+                    @media screen and (max-width:767.98px){
                         text-align:left;
                         padding:.3125rem .3125rem .3125rem 3.125rem;
                     }
@@ -66,7 +66,7 @@
                         box-shadow: 0 7px 32px rgba(7,36,158,0.35);
                         border:.125rem solid #d4ddff;
 
-                        @media screen and(max-width:767.98px){
+                        @media screen and (max-width:767.98px){
                             left:0;
                         }
 
@@ -157,7 +157,7 @@
             transition:all ease .5s;
             background:$color-primary;
 
-            @media screen and(max-width:767.98px){
+            @media screen and (max-width:767.98px){
                 padding:1.125rem 1.875rem;
             }
 
@@ -662,7 +662,7 @@
     z-index:9;
     overflow: hidden;
 
-    @media screen and(max-width:767.98px){
+    @media screen and (max-width:767.98px){
         padding:1.875rem 0;
     }
 

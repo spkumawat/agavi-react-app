@@ -1,3 +1,6 @@
+@import '../../_variable.scss';
+
+
 header {
     .my-nav {
         position: relative;
@@ -35,7 +38,7 @@ header {
             visibility: hidden;
             opacity: 0;
 
-            @media screen and(max-width:767.98px) {
+            @media screen and (max-width:767.98px) {
                 visibility: visible;
                 opacity: 1;
             }
@@ -90,7 +93,7 @@ header {
             flex: 1 1 30%;
             max-width: 280px;
 
-            @media screen and(max-width:767.98px) {
+            @media screen and (max-width:767.98px) {
                 width: 80%;
                 flex: 1 1 80%;
                 max-width: 80%;
@@ -106,7 +109,7 @@ header {
             align-items: center;
             justify-content: flex-end;
 
-            @media screen and(max-width:767.98px) {
+            @media screen and (max-width:767.98px) {
                 width: 100%;
                 flex: 1 1 100%;
                 max-width: 100%;
@@ -114,7 +117,7 @@ header {
             }
 
             .menu {
-                display: block;
+                display: none;
                 width: 100%;
                 text-align: right;
 
@@ -125,11 +128,11 @@ header {
                     transition: ease-in-out 0.9s;
                 }
 
-                @media screen and(max-width:767.98px) {
+                @media screen and (max-width:767.98px) {
                     text-align: left;
-                    opacity: 0;
-                    visibility: hidden;
-                    display: none;
+                    opacity: 1;
+                    visibility: visible;
+                    // display: none;
                 }
 
                 ul {
@@ -137,7 +140,7 @@ header {
                         display: inline-block;
                         padding: 0.625rem;
 
-                        @media screen and(max-width:767.98px) {
+                        @media screen and (max-width:767.98px) {
                             display: block;
                         }
 
@@ -150,7 +153,7 @@ header {
                                 color:$icons-color;
                             }
 
-                            @media screen and(max-width:767.98px) {
+                            @media screen and (max-width:767.98px) {
                                 padding: 0rem;
                             }
 
